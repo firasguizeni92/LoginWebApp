@@ -22,10 +22,13 @@ public class Test5 {
 	  driver = new ChromeDriver();
     baseUrl = "http://localhost:8080/";
     //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    
     driver.manage().window().maximize();; 
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
+ 
+  
   @Test
   public void test5() throws Exception {
 	  driver.manage().window().maximize();
