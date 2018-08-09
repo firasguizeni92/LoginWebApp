@@ -56,7 +56,7 @@ public class Test5 {
     driver.findElement(By.name("password")).sendKeys("firas");
     driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
    // driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
-    assertEquals("", driver.getTitle());
+   assertEquals("", driver.getTitle());
    // assertEquals("", driver.getTitle());
     driver.findElement(By.linkText("Go to Login")).click();
     //driver.findElement(By.linkText("Go to Login")).click();
