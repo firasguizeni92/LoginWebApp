@@ -28,7 +28,8 @@ public class Test5 {
 
   @Test
   public void test5() throws Exception {
-    driver.get(baseUrl + "/LoginWebApp/");
+	  driver.manage().window().maximize();
+	  driver.get(baseUrl + "/LoginWebApp/");
     assertEquals("JSP Example", driver.getTitle());
    // driver.findElement(By.linkText("Register Here")).click();
    driver.findElement(By.linkText("Register Here")).click();
